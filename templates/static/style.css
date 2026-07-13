@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(120deg, #4a90e2, #6a5acd);
+    padding: 50px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-image img {
+    width: 320px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* MAIN */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ACTION BOX */
+.action-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.upload-form input {
+    margin-bottom: 15px;
+}
+
+.or {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.record-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #4a90e2;
+    color: white;
+}
+
+.record {
+    background: #e74c3c;
+    color: white;
+}
+
+.stop {
+    background: #2ecc71;
+    color: white;
+}
+
+.secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.success {
+    background: #28a745;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* OUTPUT */
+.output-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #4a90e2;
+}
+
+.action-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+    color: #555;
+}

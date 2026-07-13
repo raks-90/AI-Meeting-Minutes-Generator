@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glass Box */
+.box {
+    width: 60%;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+    text-align: center;
+    animation: slideFade 0.9s ease;
+}
+
+.box h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.box p {
+    font-size: 1.2rem;
+    color: #eaeaea;
+    margin-bottom: 30px;
+}
+
+/* Button */
+button {
+    padding: 14px 36px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #4a90e2, #6fb1fc);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(74,144,226,0.55);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 45px rgba(74,144,226,0.75);
+}
+
+/* Animation */
+@keyframes slideFade {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>AI Meeting Minutes Generator</h1>
+    <p>Convert your meeting audio into structured English meeting minutes.</p>
+    <button onclick="window.location.href='/home'">Get Started</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thank You</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glass Card */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    animation: fadeIn 0.8s ease;
+}
+
+.card h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #eaeaea;
+    margin-bottom: 30px;
+}
+
+/* Button */
+button {
+    padding: 14px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #4a90e2, #6fb1fc);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(74,144,226,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(74,144,226,0.7);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Thank You! 🎉</h1>
+    <p>Your meeting minutes have been generated successfully.</p>
+    <button onclick="window.location.href='/'">Back to Home</button>
+</div>
+
+</body>
+</html>

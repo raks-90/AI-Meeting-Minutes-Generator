@@ -72,6 +72,19 @@ http://127.0.0.1:5000
 - Export meeting minutes as PDF
 - Cloud deployment
 - Multi-language transcription
+  ## Screenshots
+
+### Welcome Page
+
+![Welcome Page](screenshots/home.png)
+
+### Upload Audio
+
+![Upload Audio](screenshots/upload.png)
+
+### Generated Meeting Minutes
+
+![Meeting Minutes](screenshots/result.png)
 
 ## Author
 
